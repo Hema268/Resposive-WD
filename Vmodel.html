@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V-Model Blog</title>
+    <link rel="stylesheet" href="Vstyle.css">
+</head>
+<body>
+    <header>
+        <h1>V-Model</h1>
+    </header>
+    <main>
+        <article>
+            <h2>What is the V-Model?</h2>
+            <p>The V-model is a type of SDLC model where the process executes in a sequential manner in a V-shape. It is also known as the Verification and Validation model. It is based on the association of a testing phase for each corresponding development stage. The development of each step is directly associated with the testing phase. The next phase starts only after completion of the previous phase i.e., for each development activity, there is a testing activity corresponding to it. </p>
+            
+            <h2>Phases in V-Model</h2>
+            <ul style="list-style: decimal;">
+                <li>Verification Phase</li>
+                <li>Validation Phase</li>
+            </ul>
+            <h3>Verification Phase</h3>
+                 <p>It involves a static analysis method (review) done without executing code. It is the process of evaluation of the product development process to find whether specified requirements meet.</p>
+                 <ul style="list-style: decimal;">
+                    <li><b>Business requirement analysis: </b>
+                       The product requirements understood from the customer's side. This phase contains detailed communication to understand customer's expectations and exact requirements.
+                    </li>
+                    <li><b>System Design: </b>
+                        In this stage system engineers analyze and interpret the business of the proposed system by studying the user requirements document.
+                    </li>
+                    <li><b>Architecture Design: </b>
+                        The baseline in selecting the architecture is that it should understand all which typically consists of the list of modules, brief functionality of each module, their interface relationships, dependencies, database tables, architecture diagrams, technology detail, etc. The integration testing model is carried out in a particular phase.
+                    </li>
+                    <li><b>Module Design: </b>
+                        In the module design phase, the system breaks down into small modules. The detailed design of the modules is specified, which is known as Low-Level Design.
+                    </li>
+                    <li><b>Coding Phase: </b>
+                        After designing, the coding phase is started. Based on the requirements, a suitable programming language is decided. There are some guidelines and standards for coding. Before checking in the repository, the final build is optimized for better performance, and the code goes through many code reviews to check the performance.
+                    </li>
+                 </ul>
+            <h3>Validation Phase</h3>
+            <ul style="list-style: decimal;">
+                <li><b>Unit Testing: </b>
+                    In the V-Model, Unit Test Plans (UTPs) are developed during the module design phase. These UTPs are executed to eliminate errors at code level or unit level. A unit is the smallest entity which can independently exist, e.g., a program module. Unit testing verifies that the smallest entity can function correctly when isolated from the rest of the codes/ units. 
+                </li>
+                <li><b>Integration Testing: </b>
+                    Integration Test Plans are developed during the Architectural Design Phase. These tests verify that groups created and tested independently can coexist and communicate among themselves.  
+                </li>
+                <li><b>System Testing: </b>
+                    System Tests Plans are developed during System Design Phase. Unlike Unit and Integration Test Plans, System Tests Plans are composed by the client?s business team. System Test ensures that expectations from an application developer are met.   
+                </li>
+                <li><b>Acceptance Testing: </b>
+                    Acceptance testing is related to the business requirement analysis part. It includes testing the software product in user atmosphere. Acceptance tests reveal the compatibility problems with the different systems, which is available within the user atmosphere. It conjointly discovers the non-functional problems like load and performance defects within the real user atmosphere.  
+                </li>
+            </ul>
+            <div>
+                <img src="Vmpic.png" alt="V-Model">
+            </div>
+            <h2>Advantages of the V-Model</h2>
+            <ul>
+                <li>Easy to Understand.</li>
+                <li>Testing Methods like planning, test designing happens well before coding.</li>
+                <li>This saves a lot of time. Hence a higher chance of success over the waterfall model.</li>
+                <li>Avoids the downward flow of the defects.</li>
+                <li>Works well for small plans where requirements are easily understood.</li>
+            </ul>
+            
+            <h2>Disadvantages of the V-Model</h2>
+            <ul>
+                <li>Very rigid and least flexible.</li>
+                <li>Not a good for a complex project.</li>
+                <li>Software is developed during the implementation stage, so no early prototypes of the software are produced.</li>
+                <li>If any changes happen in the midway, then the test documents along with the required documents, has to be updated.</li>
+            </ul>
+            
+            <h2>Example of V-Model</h2>
+             <p>example of the V-Model applied to developing a mobile banking application:</p>
+         <ul>
+            <li><b>Requirements Analysis:</b>Gather requirements for the banking app, including account management, funds transfer, bill payment, and account balance inquiry.</li>
+            <li><b>System Design:</b>Create the system architecture detailing database structure, user interface wireframes, and system components like authentication and transaction processing.</li>
+            <li><b>SubSystem Design:</b></li> 
+                <ul style="list-style: circle;">
+                    <li><b>Design account management subsystem:</b> User registration, login, and profile management.</li>
+                    <li><b>Design funds transfer subsystem:</b>Interface for transferring funds between accounts.</li>
+                    <li><b>Design bill payment subsystem:</b> Functionality for paying bills to registered payees.</li>
+                    <li><b>Design balance inquiry subsystem:</b> Interface for checking account balances.</li>
+                </ul>
+            <li><b>Implementation:</b>Develop the banking app according to the design specifications, coding features like user registration, funds transfer, bill payment, and account balance inquiry.</li>
+            <li><b>Unit Testing:</b>Test individual components such as user registration, funds transfer, and balance inquiry to ensure they function correctly in isolation.</li>
+            <li><b>Integration Testing</b>Test individual components such as user registration, funds transfer, and balance inquiry to ensure they function correctly in isolation.</li>
+            <li><b>System Testing:</b>Test the complete mobile banking app to ensure it meets functional requirements, performs well under various conditions, and provides a smooth user experience.</li>
+            <li><b>Acceptance Testing:</b>Stakeholders review the app against predefined criteria to ensure it meets their needs and expectations, signing off on its readiness for deployment.</li>
+         </ul>
+            </article>
+    </main>
+    <footer>
+        <p>&copy; Hemalatha Gunasekaran. V-Model Blog</p>
+        <a href="index.html">Home</a>
+    </footer>
+</body>
+</html>
