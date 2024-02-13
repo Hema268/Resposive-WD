@@ -86,6 +86,12 @@ body {
 .card:hover .text{
     opacity: 1;
 }
+footer {
+    background-color: #03022e;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
 /* Responsive Design*/ 
 @media only screen and (max-width: 768px) {
     .center {
